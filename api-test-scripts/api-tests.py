@@ -62,7 +62,7 @@ def test_api_format_error(api_request_context: APIRequestContext):
     session = boto3.Session(profile_name=config['config']['profile_name'], region_name=config['config']['region'])
     dynamodb = boto3.resource('dynamodb', region_name=config['config']['region'])
 
-    table = dynamodb.Table('TerraDB')
+    table = dynamodb.Table(config['config']['db'])
 
     a = (table.get_item(Key={'Name': 'Eduardo'}))
     view = a['Item']['view_count']
