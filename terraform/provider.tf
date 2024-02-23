@@ -10,7 +10,7 @@ terraform {
 }
 
 provider "aws" {
-  profile = "gandolfia-sandbox"
+  profile = var.sso-profile
   region  = "us-east-1"
 
 }
