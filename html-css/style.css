@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Urbanist:wght@200;300;400;500;600;700&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+:root{
+	--primary-color: #799ACC;
+	--text-color: #51657a;
+}
+html {
+	font-size: 10px;
+}
+body{
+	font-family: Urbanist, sans-serif;
+	background-color: #6C7F93;
+	color: black;
+}
+
+
+/* common styles*/
+h3{
+	display: inline;
+}
+
+img{
+	width: 100%;
+}
+a{
+	text-decoriation: none;
+	color: white;
+}
+.description{
+	margin-top: 1rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: var(--text-color)
+}
+.title{
+	color: var(--primary-color);
+	font-weight: 700;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.group_item{
+	margin-top: 2rem;
+
+}
+.group_name{
+	font-size: 1.6rem;
+/*	font-weight: 700;*/
+}
+
+.regular_list{
+	margin-bottom: .2rem;
+}
+
+
+/*layouts*/
+.container{
+	max-width: 1000px;
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	padding: 5rem;
+	background: whitesmoke;
+	grid-template-colums: 1fr 1fr;
+	gap: 4rem;
+}
+@media only screen and (max-width: 768px) {
+	.container{
+		width: 100%;
+		grid-template-colums: 1fr;
+		padding:3rem;
+		gap: 7rem;
+	}
+}
+.profile{
+	gid-column: 1 / -1;
+	margin-bottom: 2rem;
+}
+
+
+/* profile*/
+.profile_container{
+	display: flex;
+	gap: 2rem;
+}
+.profile_profileImg {
+	max-width: 250px;
+}
+.profile_name_firstName{
+	color: Black;
+	font-weight: 200;
+	font-size: clamp(2rem , 8vw, 4rem);
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: -0.8rem;
+}
+.profile_name_lastName{
+	color: var(--primary-color);
+	font-weight: 700;
+	font-size: clamp(2.5rem, 15vw, 5rem);
+	text-transform: uppercase;
+	display: block;
+}
+.profile_title{
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.download_button{
+	display: block;
+	text-decoration: underline;
+	font-size: 1.6rem;
+	margin-top: 1rem;
+	color: black;
+}
+.download_button:hover{
+	color: var(--primary-color);
+}
+@media only screen and (max-width: 768 px){
+	.profile_container{
+		flex-direction: column;
+	}
+}
+/*Skills*/
+.skill_list{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.list_item{
+	float: left;
+	display: block;
+	text-align: center;
+	padding: 10px;
+}
+
+/*Education Styles*/
+
+.education_name{
+	color: var(--text-color);
+	font-size: 1.6rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
