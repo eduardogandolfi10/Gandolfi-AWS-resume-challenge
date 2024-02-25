@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html land="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Resume</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<script>
+            fetch('https://n41jxe4ibb.execute-api.us-east-1.amazonaws.com/dev/update-view-count?name=Andres')
+              .then(response => response.json())
+              .then((data) => {
+            document.getElementById('views').innerText = data.Andres
+              })
+	</script>
+	<div class="container">
+		<div class="profile">
+			<div class="profile_container">
+				<div class="profile_profileImg">
+					<img src="./images/Sample-Image.jpeg" alt="Test Image">
+				</div>
+				<div>
+					<h1 class="profile_name">
+						<span class="profile_name_firstName"><b>Andres</b></span>
+						<span class="profile_name_lastName">Gandolfi</span>
+					</h1>
+					<p class="profile_title"><b>Software Engineer</b></p>
+					<p class="profile_title"><b>Viewer #<span id="views"></span></b></p>
+					<p class="profile_description description">Software engineer with 5 years of experience working with Cloud infrastructures and Data Security</p>
+					<p class="profile_description description">+1 (321)732-0602</p>
+					<p class="profile_description description">gandolfia10@gmail.com</p>
+
+				</div>
+			</div>
+		</div>
+		<hr color="#727171">
+		<div class="group-1">
+			<div class="skills">
+				<h3 class="title">Skills</h3>
+				<ul class="skill_list description">
+					<li class="list_item">Python</li>
+					<li class="list_item">C++</li>
+					<li class="list_item">C#</li>
+					<li class="list_item">AWS </li>
+					<li class="list_item">Google Cloud </li>
+					<li class="list_item">Git </li>
+					<li class="list_item">HTML/CSS </li>
+					<li class="list_item">MySQL</li>
+					<li class="list_item">Apache Tomcat</li>
+					<li class="list_item">Terraform</li>
+				</ul>
+			</div>
+		</div>
+		<hr color="#727171">
+		<div class="Work">
+			<h3 class="title">Work Experience</h3>
+			<div class="group_items">
+				<h4 class="group_name">Softthink Solutions</h4>
+				<h4 class="group_name">2019-Present</h4>
+				<p class="descriptions">
+					<ul class="work_list description">
+						<li class="regular_list">Configured Ubuntu machines to follow STIG Compliance in accordance to specific application and organization policies</li>
+						<li class="regular_list">Mantain Cloud servers inventory and follow organization naming and tagging convention for easier management</li>
+						<li class="regular_list">Setup VPNs and Link cloud environment to Clients Active directory to allow for easier organization user permission management</li>
+						<li class="regular_list">Setup AWS Workspaces to be setup with client’s Active Directory to allow cloud VDI creation</li>
+						<li class="regular_list">Worked with Amazon EC2 instances to deploy web application that used Apache2 and Payara servers.</li>
+						<li class="regular_list">Monitored Security Compliance by using Tenable scans on servers on the cloud and AWS Security Hub, AWS GuardDuty</li>
+						<li class="regular_list">Monitor Server health with a combination of alarms and Cloudwatch</li>
+						<li class="regular_list">Configure Servers to route ingress and egress traffic through a firewall</li>
+						<li class="regular_list">Configured Load Balancers to route traffic to multiple servers in case of server failure.</li>
+						<li class="regular_list">Created standard Golden Image in accordance to organization policies and applications to allow for easy machine imaging</li>
+						<li class="regular_list">Used Qualys to deliver patches to all end users on the organization</li>
+						<li class="regular_list">Setup Cloud infrastructure in Google Cloud</li>
+						<li class="regular_list">Deployed instances and setup automated backups in Google Cloud</li>
+						<li class="regular_list">Setup alarms for any disturbance in service of web applications deployed on Google Cloud</li>
+						<li class="regular_list">Updated Client Configuration to use IPv4 and IPv6</li>
+					</ul>
+			</div>
+		</div>
+		<hr color="#727171">
+		<div class="Education">
+			<h3 class="title">Education</h3>
+			<div class="group_items">
+				<h3 class="education_name">Full Sail University</h3><h3 class="group_name"> - Software Engineering - July 2018</h3>
+			</div>
+		</div>
+		<hr color="#727171">
+		<div class="Certifications">
+			<h3 class="title">Certifications</h3>
+			<div class="group_items">
+				<h3 class="group_name">AWS Certified Cloud Practitioner<br></h3>
+				<h3 class="group_name">AWS Certified Solutions Architect - Associate</h3>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

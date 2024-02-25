@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Get Value of Variable from JavaScript to HTML</title> 
+</head> 
+<body> 
+  <p id="demo"></p> 
+  <span id="demo" />
+ 
+  <script>
+        fetch('https://n41jxe4ibb.execute-api.us-east-1.amazonaws.com/dev/update-view-count?name=Andres'
+        ,{
+          method: "GET",
+          headers:{
+            'Content-Type': 'application/json'
+          }
+        }) // You should change the link.
+          .then(response => response.json())
+          .then((data) => {
+            viewers = data.Andres
+          document.getElementById("demo").innerHTML = (viewers)
+          })
+
+</script>
+</body> 
+</html> 
