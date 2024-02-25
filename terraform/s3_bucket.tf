@@ -1,4 +1,3 @@
-
 resource "aws_s3_bucket" "subdomain-bucket" {
   # (resource arguments)
   bucket = var.subdomain-bucket-name
